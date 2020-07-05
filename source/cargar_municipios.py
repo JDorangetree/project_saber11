@@ -2,7 +2,7 @@ import pandas as pd
 from municipios.models import Municipio 
 from departamentos.models import Departamento
 
-df = pd.read_excel('/home/julian/proyecto_icfes/municipios/COD_MUNICIPIOS.xlsx')
+df = pd.read_excel('municipios/COD_MUNICIPIOS.xlsx')
 nombres = list(df[df.columns[0]])
 cod_mun = list(df[df.columns[1]])
 cod_dep = list(df[df.columns[2]])

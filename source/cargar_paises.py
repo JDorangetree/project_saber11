@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_excel('/home/julian/proyecto_icfes/paises/COD_PAISES.xlsx')
+df = pd.read_excel('paises/COD_PAISES.xlsx')
 nombres = list(df[df.columns[0]])
 cod_pais = list(df[df.columns[1]])
 data = []

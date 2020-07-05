@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_excel('/home/julian/proyecto_icfes/departamentos/COD_DEPARTAMENTOS.xlsx')
+df = pd.read_excel('departamentos/COD_DEPARTAMENTOS.xlsx')
 nombres = list(df[df.columns[0]])
 cod_dep = list(df[df.columns[1]])
 data = []

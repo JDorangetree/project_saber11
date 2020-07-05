@@ -3,7 +3,7 @@ from municipios.models import Municipio
 from departamentos.models import Departamento
 from colegios.models import Colegios
 
-df = pd.read_excel('/home/julian/proyecto_icfes/colegios/COLEGIOS.xlsx')
+df = pd.read_excel('colegios/COLEGIOS.xlsx')
 cod_mun = list(df[df.columns[13]])
 cod_dep = list(df[df.columns[14]])
 print(cod_dep)
