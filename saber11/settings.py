@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'saber11.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'icfes',
-        'USER': 'julian',
+        'NAME': 'saber11',
+        'USER': 'admin',
         'PASSWORD': 'Julian1987',
-        'HOST': 'localhost',
+        'HOST': 'icfes.ccnkdxaplsig.us-east-1.rds.amazonaws.com',
         'PORT': '3306'
     }
 }
