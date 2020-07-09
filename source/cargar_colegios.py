@@ -28,6 +28,8 @@ for i in range(0, len(cod_mun)):
     data.append(dict)
     print(i)
 
+i = 0
 for datos in data:
     obj = Colegios(**datos)
     obj.save()
+    i += 1

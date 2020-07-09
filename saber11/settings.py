@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'g2&54xs6k_%3-h&&lg4n2p6z0s47%3^sp3x2grscy2c6e_e0#n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'municipios',
     'paises',
     'colegios',
+    'estudiantes',
 ]
 
 MIDDLEWARE = [
@@ -80,10 +81,10 @@ WSGI_APPLICATION = 'saber11.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'icfes',
-        'USER': 'julian',
+        'NAME': 'names',
+        'USER': 'admin',
         'PASSWORD': 'Julian1987',
-        'HOST': 'localhost',
+        'HOST': 'apigender.ccnkdxaplsig.us-east-1.rds.amazonaws.com',
         'PORT': '3306'
     }
 }
@@ -126,3 +127,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
